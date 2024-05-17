@@ -1,12 +1,12 @@
 <?php
 $conn= new mysqli("localhost","root","","portfolio");
-// if($conn->connect_error){
-//     echo"failed to connect";
-// }
-// else{
-//     echo("Connected with DB");
-//     echo "<br>";
-//   }
+if($conn->connect_error){
+  echo"failed to connect";
+ }
+ else{
+     echo("Connected with DB");
+     echo "<br>";
+ }
   $Name = $_POST['name'];
   $Email = $_POST['email'];
   $Mobile = $_POST['mno'];
